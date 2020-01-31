@@ -8,7 +8,7 @@ module.exports = {
       xs: ".75rem",
       sm: ".9rem",
       base: "1.0rem",
-      "md": "1.2rem",
+      "md": "1.1rem",
       lg: "1.8rem",
       xl: "2.0rem",
       "brand": "2.0rem",

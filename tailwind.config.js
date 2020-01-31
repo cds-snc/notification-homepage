@@ -10,14 +10,14 @@ module.exports = {
       base: "2.0rem",
       lg: "3.6rem",
       xl: "3.8rem",
-      brand: "2.6rem",
+      brand: "2.6rem"
     },
     fontFamily: {
       sans: ["lato"],
       body: ["Noto Sans"]
     },
     screens: {
-      sm: "640px",
+      sm: "640rem",
       md: "768px",
       lg: "1024px"
     },

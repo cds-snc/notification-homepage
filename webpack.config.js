@@ -4,7 +4,17 @@ const glob = require("glob");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const PurgecssPlugin = require("purgecss-webpack-plugin");
+//const PurgecssPlugin = require("purgecss-webpack-plugin");
+
+//new PurgecssPlugin({
+  //extractor: class TailwindExtractor {
+    //static extract(content) {
+      //return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+    //}
+  //},
+  //extensions: ["html"],
+  //paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
+//})
 
 const PATHS = {
   src: path.join(__dirname, "src")
@@ -56,10 +66,7 @@ module.exports = (env, argv) => {
         title: "Development",
         template: "./src/index.html"
       }),
-      new MiniCssExtractPlugin(),
-      new PurgecssPlugin({
-        paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
-      })
+      new MiniCssExtractPlugin()
     ]
   };
 

@@ -16,6 +16,16 @@
     />
   </head>
   <body class="font-body">
+
+    <!-- Active Breakpoint Indicator --> 
+<div class="fixed top-0 right-0 m-8 p-3 text-xs font-mono text-black h-6 w-6 rounded-full flex items-center justify-center bg-gray-700 sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
+  <div class="block  sm:hidden md:hidden lg:hidden xl:hidden">al</div>
+  <div class="hidden sm:block  md:hidden lg:hidden xl:hidden">sm</div>
+  <div class="hidden sm:hidden md:block  lg:hidden xl:hidden">md</div>
+  <div class="hidden sm:hidden md:hidden lg:block  xl:hidden">lg</div>
+  <div class="hidden sm:hidden md:hidden lg:hidden xl:block">xl</div>
+</div>
+<!-- /Active Breakpoint Indicator -->
     <div>
       <!-- start header -->
       <header>
@@ -80,7 +90,7 @@
       <!-- start section 1 -->
       <div class="bg-blue">
         <div class="container">
-          <div class="flex justify-between py-10">
+          <div class="flex flex-col lg:flex-row justify-between py-10">
             <div class="text-content max-w-4xl">
               <h2 class="text-white leading-tight font-bold">
                 Send service updates easily by email and text message
@@ -93,7 +103,7 @@
                 <a href="#" class="text-white text-default">Log in</a>
               </div>
             </div>
-            <div class="ml-10 image-content">
+            <div class="ml-10 image-content hidden lg:block">
               <img src="<%=require('./img/section-1.svg')%>" width="350" />
             </div>
           </div>
@@ -104,11 +114,11 @@
       <!-- start section 2 -->
       <div class="bg-white">
         <div class="container">
-          <div class="flex justify-between py-10">
-            <div class="image-content">
+          <div class="flex flex-col lg:flex-row justify-between py-10">
+            <div class="image-content pb-10 lg:pb-0">
               <img src="<%=require('./img/section-2.svg')%>" width="350" />
             </div>
-            <div class="text-content max-w-4xl">
+            <div class="text-content lg:max-w-4xl">
               <h2 class="leading-tight font-bold">
                 A platform built for government
               </h2>

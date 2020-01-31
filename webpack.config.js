@@ -1,14 +1,14 @@
 const webpack = require("webpack");
 const path = require("path");
-const glob = require('glob')
+const glob = require("glob");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const PurgecssPlugin = require('purgecss-webpack-plugin')
+const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 const PATHS = {
-  src: path.join(__dirname, 'src')
-}
+  src: path.join(__dirname, "src")
+};
 
 module.exports = (env, argv) => {
   console.info("running in mode:", argv.mode);
@@ -23,26 +23,28 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
+          test: /\.svg/,
+          use: {
+            loader: "svg-url-loader",
+            options: {}
+          }
+        },
+        {
           test: /\.css$/i,
           use: [
             {
-              loader: MiniCssExtractPlugin.loader,
-              
+              loader: MiniCssExtractPlugin.loader
             },
             "css-loader",
             {
-              loader: 'postcss-loader',
+              loader: "postcss-loader",
               options: {
-                ident: 'postcss',
-                plugins: [
-                  require('tailwindcss'),
-                  require('autoprefixer'),
-                ],
-              },
-            },
+                ident: "postcss",
+                plugins: [require("tailwindcss"), require("autoprefixer")]
+              }
+            }
           ]
-        },
-        
+        }
       ]
     },
     resolve: {

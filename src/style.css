@@ -4,6 +4,6 @@
 
 @tailwind utilities;
 
-p{
-    color:blue;
+.btn-blue {
+  background-color: theme("colors.blue.lighter");
 }

@@ -17,28 +17,19 @@
   </head>
   <body class="font-body">
 
-    <!-- Active Breakpoint Indicator --> 
-<div class="fixed top-0 right-0 m-8 p-3 text-xs font-mono text-black h-6 w-6 rounded-full flex items-center justify-center bg-gray-700 sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
-  <div class="block  sm:hidden md:hidden lg:hidden xl:hidden">al</div>
-  <div class="hidden sm:block  md:hidden lg:hidden xl:hidden">sm</div>
-  <div class="hidden sm:hidden md:block  lg:hidden xl:hidden">md</div>
-  <div class="hidden sm:hidden md:hidden lg:block  xl:hidden">lg</div>
-  <div class="hidden sm:hidden md:hidden lg:hidden xl:block">xl</div>
-</div>
-<!-- /Active Breakpoint Indicator -->
     <div>
       <!-- start header -->
       <header>
         <div class="container">
           <!-- start sub nav -->
           <div class="flex py-10 justify-between">
-            <div class="flex">
+            <div class="flex flex-col lg:flex-row">
               <div class="py-1">
                 <img src="<%=require('./img/canada-ca.svg')%>" width="250" />
               </div>
-              <div class="product-title flex">
+              <div class="product-title flex mt-10 lg:mt-0">
                 <div
-                  class="leading-none ml-4 mr-3 pl-5 font-semibold inline-block top-0 text-brand"
+                  class="leading-none lg:ml-4 mr-3 lg:pl-5 font-semibold inline-block top-0 text-brand"
                 >
                   Notify
                 </div>
@@ -142,9 +133,9 @@
       <!-- start section 3 -->
       <div class="bg-gray">
         <div class="container">
-          <div class="flex justify-between py-10">
+          <div class="flex flex-col lg:flex-row justify-between py-10">
             <!-- -->
-            <div class="text-content max-w-4xl">
+            <div class="text-content max-w-4xl pb-10 lg:pb-0">
               <h2 class="leading-tight font-bold">Notify is built for you</h2>
               <ul class="list-disc ml-5">
                 <li class="pt-4">
@@ -162,7 +153,7 @@
               </ul>
             </div>
 
-            <div class="image-content flex flex-auto justify-center">
+            <div class="image-content flex flex-auto lg:justify-center">
               <img src="<%=require('./img/section-3.svg')%>" width="350" />
             </div>
             <!-- -->
@@ -174,9 +165,9 @@
       <!-- start section 4 -->
       <div class="bg-white">
         <div class="container">
-          <div class="flex justify-between py-10">
+          <div class="flex flex-col lg:flex-row justify-between py-10">
             <!-- -->
-            <div class="image-content flex flex-auto justify-center">
+            <div class="image-content flex flex-auto lg:justify-center pb-10 lg:pb-0">
               <img src="<%=require('./img/section-4.svg')%>" width="350" />
             </div>
 
@@ -210,8 +201,8 @@
       <!-- start section 5 -->
       <div class="bg-gray">
         <div class="container">
-          <div class="flex justify-between py-10">
-            <div class="text-content max-w-3xl">
+          <div class="flex flex-col lg:flex-row justify-between py-10">
+            <div class="text-content max-w-3xl pb-10 lg:pb-0">
               <h2 class="leading-tight font-bold">
                 Integrate Notify into your system
               </h2>
@@ -228,7 +219,7 @@
                 <a href="#">Learn how to integrate with our API</a>
               </p>
             </div>
-            <div class="image-content flex flex-auto justify-center content-start">
+            <div class="image-content flex flex-auto lg:justify-center lg:content-start">
               <img class="block align-top" src="<%=require('./img/section-5.svg')%>" width="350" />
             </div>
           </div>
@@ -239,10 +230,10 @@
       <!-- start section 6 -->
       <div class="bg-white">
         <div class="container">
-          <div class="flex justify-between py-10">
-            <div class="image-content flex flex-auto justify-center">
+          <div class="flex flex-col lg:flex-row justify-between py-10">
+            <div class="image-content flex flex-auto lg:justify-center">
               <img
-                class="inline-block"
+                class="inline-block pb-10 lg:pb-0"
                 src="<%=require('./img/section-6.svg')%>"
                 width="261"
               />
@@ -279,7 +270,7 @@
               These teams are already using Notify
             </h2>
 
-            <div class="flex justify-between">
+            <div class="flex flex-col lg:flex-row justify-between">
               <!-- start column 1-->
               <div class="max-w-3xl pt-10">
                 <p>

@@ -4,72 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Notify</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="font-body">
     <div>
       <!-- start header -->
       <header>
         <div class="container">
           <!-- start sub nav -->
-          <div class="flex">
-            <img src="<%=require('./img/canada-ca.svg')%>" width="261" />
-            <div>Notify</div>
-            <div>beta</div>
-
+          <div class="flex py-6 justify-between">
+            <div class="flex">
+              <div class="py-1">
+                <img src="<%=require('./img/canada-ca.svg')%>" width="261" />
+              </div>
+              <div class="product-title flex">
+                <div
+                  class="leading-none ml-4 mr-3 pl-5 font-semibold inline-block top-0 text-brand"
+                >
+                  Notify
+                </div>
+                <div class="bg-blue-lighter py-1 px-2 rounded-sm text-md">
+                  Beta
+                </div>
+              </div>
+            </div>
             <!-- start sub nav -->
-            <nav>
-              <a href="#">Français</a>
-              <a href="#">Log in</a>
+            <nav class="flex pt-4">
+              <a
+                href="#"
+                class="underline hover:no-underline leading-none inline-block text-blue"
+                >Français</a
+              >
+              <a
+                href="#"
+                class="underline hover:no-underline leading-none inline-block pl-5 text-blue"
+                >Log in</a
+              >
             </nav>
             <!-- end sub nav -->
           </div>
-          <!-- start main nav -->
-          <nav class="bg-gray">
-            <a href="#">Features</a>
-            <a href="#">Documentation</a>
-            <a href="#">Support</a>
-          </nav>
-          <!-- end main nav -->
         </div>
+
+        <!-- start main nav -->
+        <nav class="bg-gray py-3">
+          <div class="container">
+            <a
+              href="#"
+              class="text-blue mr-5 font-bold no-underline hover:underline"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="text-blue mr-5 font-bold no-underline hover:underline"
+              >Documentation</a
+            >
+            <a
+              href="#"
+              class="text-blue mr-5 font-bold no-underline hover:underline"
+              >Support</a
+            >
+          </div>
+        </nav>
+        <!-- end main nav -->
       </header>
       <!-- end header -->
       <!-- start section 1 -->
       <div class="bg-blue">
         <div class="container">
-          <div class="flex">
-            <div class="text-content">
-              <h2>Send service updates easily by email and text message</h2>
-              <p>Try Notify if you work in the federal government.</p>
-              <div>
-                <a href="#" class="btn-blue">Create an account</a>
-                <a href="#">Log in</a>
+          <div class="flex justify-between py-10">
+            <div class="text-content max-w-lg">
+              <h2 class="text-white leading-tight font-bold">
+                Send service updates easily by email and text message
+              </h2>
+              <p class="pt-3 text-white text-md">
+                Try Notify if you work in the federal government.
+              </p>
+              <div class="pt-10">
+                <a href="#" class="btn-blue mr-10">Create an account</a>
+                <a href="#" class="text-white text-default">Log in</a>
               </div>
             </div>
-            <div class="image-content">
-              <img src="<%=require('./img/section-1.svg')%>" width="261" />
+            <div class="ml-10 image-content">
+              <img src="<%=require('./img/section-1.svg')%>" width="350" />
             </div>
           </div>
         </div>
       </div>
       <!-- end section 1 -->
-      
+
       <!-- start section 2 -->
       <div class="bg-white">
         <div class="container">
-          <div class="flex">
+          <div class="flex justify-between py-10">
             <div class="image-content">
-              <img src="<%=require('./img/section-2.svg')%>" width="261" />
+              <img src="<%=require('./img/section-2.svg')%>" width="361" />
             </div>
-            <div class="text-content">
-              <h2>A platform built for government</h2>
-              <p>
-                Notify is a messaging system built for the Government of Canada. 
+            <div class="text-content max-w-lg">
+              <h2 class="leading-tight font-bold">
+                A platform built for government
+              </h2>
+              <p class="pt-3 text-md">
+                Notify is a messaging system built for the Government of Canada.
               </p>
-              <p>
-                Send emails or text messages to keep the public informed and make your services more transparent. Use templates to keep communications easy, consistent, and accessible.
+              <p class="pt-3 text-md">
+                Send emails or text messages to keep the public informed and
+                make your services more transparent. Use templates to keep
+                communications easy, consistent, and accessible.
               </p>
-              <p>
+              <p class="pt-3 text-md text-blue">
                 <a href="#">Learn more about Notify</a>
               </p>
             </div>
@@ -77,270 +123,6 @@
         </div>
       </div>
       <!-- end section 2 -->
-
-      <!-- start section 3 -->
-      <div class="bg-gray">
-        <div class="container">
-          <div class="flex">
-            <div class="text-content">
-                <h2>Notify is built for you</h2>
-                <p>
-                 <ul>
-                     <li>Administrators who have to meet departmental service standards for communication</li>
-                     <li>Staff wrestling with multiple systems to provide service updates to the public</li>
-                     <li>Developers working on improving workflow and tooling for public servants</li>
-                 </ul>
-                </p>
-            </div>
-            <div class="image-content">
-              <img src="<%=require('./img/section-3.svg')%>" width="261" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end section 3 -->
-
-
-      <!-- start section 4 -->
-      <div class="bg-white">
-        <div class="container">
-          <div class="flex">
-            <div class="image-content">
-              <img src="<%=require('./img/section-4.svg')%>" width="261" />
-            </div>
-            <div class="text-content">
-              <h2>What Notify can do</h2>
-              <p>
-                  <ul>
-                      <li>Replace Word documents and spreadsheets with a secure database of contacts and messages</li>
-                      <li>Save time and meet service standards with templates and shared messaging components</li>
-                      <li>Measure the effectiveness of your service with detailed analytics</li>
-                  </ul>
-               
-              </p>
-              <p>
-                <a href="#">See how Notify can improve your workflow</a>
-              </p>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end section 4 -->
-
-      <!-- start section 5 -->
-      <div class="bg-gray">
-        <div class="container">
-          <div class="flex">
-            <div class="text-content">
-                <h2>Integrate Notify into your system</h2>
-                <p>
-                    The Notify API sends messages automatically. Integrate our suite of secure, cloud-based tools with your web application or admin system.
-                </p>
-                <p>
-                    Notify supports roles and permissions, so only staff who need access can send or edit messages.
-                </p>
-                <p>
-                    <a href="#">Learn how to integrate with our API</a>
-                </p>
-            </div>
-            <div class="image-content">
-              <img src="<%=require('./img/section-5.svg')%>" width="261" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end section 5 -->
-
-      <!-- start section 6 -->
-      <div class="bg-white">
-        <div class="container">
-          <div class="flex">
-            <div class="image-content">
-              <img src="<%=require('./img/section-6.svg')%>" width="261" />
-            </div>
-            <div class="text-content">
-              <h2>Notify is free for GC services</h2>
-              <p>Use Notify for free and replace paper letters or costly 3rd-party messaging services.</p>
-              <p>
-                  <ul>
-                      <li>Send unlimited emails or text messages a month, completely free</li>
-                      <li>The Notify service is provided and managed by CDS - no external procurement.</li>
-                  </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end section 6 -->
-
-       <!-- start section 7 -->
-       <div class="bg-gray">
-        <div class="container">
-              <div>
-                <h2>These teams are already using Notify</h2>
-                <div class="flex">
-                    <!-- start column 1-->
-                    <p>
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque orci sed volutpat convallis volutpat mollis eros in laoreet a risus ligula.”
-                    </p>
-                    <p>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque orci sed volutpat convallis volutpat mollis eros in laoreet a risus ligula.”
-                    </p>
-                    <!-- end column 1-->
-                </div>
-
-                <div class="flex">
-                    <!-- start column 2-->
-                    <p>
-                    “Fusce volutpat mollis eros in laoreet. In a risus ligula. Integer pharetra turpis eget leo tincidunt, nec aliquet enim iaculis.“
-                    </p>
-                    <!-- end column 2-->
-                </div>
-            </div>   
-      </div>
-      </div>
-      <!-- end section 7 -->
-
-      <!-- start section 8 -->
-      <div class="bg-blue">
-        <div class="container">
-            <h2> Try Notify now</h2>
-            <p>Create an account and start sending test messages right away!</p>
-            <a href="#">Create an account</a>
-        </div>
-      </div>
-
-      <!-- end section 8 -->
-    
-
-
-      <!-- start section 9 -->
-      <div>
-
-       <form method="post" autocomplete="off" novalidate="">
-    
-              
-              
-  <div class="form-group" data-module="">
-    <label class="form-label" for="name">
-      
-        Your name
-      
-      
-      
-    </label>
-    
-      
-    
-    
-    <input class="form-control form-control-1-1 " data-module="" id="name" name="name" required="" rows="8" type="text" value="">
-    
-    
-  </div>
-
-
-              
-              
-  <div class="form-group" data-module="">
-    <label class="form-label" for="email_address">
-      
-        Your email
-      
-      
-      
-    </label>
-    
-      
-    
-    
-    <input class="form-control form-control-1-1 " data-module="" id="email_address" name="email_address" required="" rows="8" spellcheck="false" type="email" value="">
-    
-    
-  </div>
-
-              
-              
-              
-              
-  <div class="form-group phone">
-    <label aria-hidden="true" class="form-label">
-      Your phone
-    </label>
-    <input aria-hidden="true" class="form-control form-control-1-1" id="phone" name="phone" type="text" value="" role="img">
-  </div>
-
-              
-              
-              
-  <div class="form-group" data-module="">
-    <label class="form-label" for="feedback">
-      
-        Message
-      
-      
-      
-    </label>
-    
-      
-    
-    
-    <textarea class="form-control form-control-1-1 " data-module="" id="feedback" name="feedback" required="" rows="10"></textarea>
-    
-    
-  </div>
-
-            
-
-            
-            
-  <div class="page-footer">
-    
-      <input type="hidden" name="csrf_token" value="IjE3ZTFlZjdiZTY0NTE3ZGZjODhmN2I3ZTI1YzZiYmIzNDYyODM2OTEi.ERWrhQ.7DHvzrcUbf5yyYQG0Jvsi3Wxr_c">
-      <button data-button-id="btn" type="submit" class="button">Send</button>
-    
-    
-    
-  </div>
-
-            
- 
-                  
-        </form>
-    <!-- end form -->
-
-        </div>
-
-      </div>
-      <!-- start section 9 -->
-
-      <div class="bg-blue">
-        <div class="container">
-            <footer>
-                <nav>
-                    <a href="#">Service Status</a>
-                    <a href="#">Performance</a>
-                </nav>
-                <nav>
-                    <a href="#">Privacy</a>
-                    <a href="#"></a>Security</a>
-                    <a href="#"></a>Terms of Use</a>
-                </nav>
-            </footer>
-        </div>
-      
-      
-        <div>
-
-      <img src="<%=require('./img/goc--footer-logo.svg')%>" width="261" />
-          
-
-      </div>
-
-     
-
-
     </div>
   </body>
 </html>

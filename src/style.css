@@ -1,16 +1,25 @@
 @tailwind base;
 
+html {
+  font-size: 62.5%;
+}
+
 h1 {
-  @apply text-2xl;
+  @apply text-xl font-sans pb-10;
 }
 h2 {
-  @apply text-xl;
-}
-h3 {
-  @apply text-lg;
+  @apply text-lg font-sans pb-6;
 }
 a {
-  @apply underline;
+  @apply underline text-base;
+}
+
+p{
+  @apply text-base leading-tight;
+}
+
+li{
+  @apply text-base leading-tight;
 }
 
 .btn-blue {
@@ -19,7 +28,7 @@ a {
 }
 
 .btn-blue:hover {
- /* */
+  /* */
 }
 
 @tailwind components;

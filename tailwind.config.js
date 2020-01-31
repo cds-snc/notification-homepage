@@ -5,20 +5,16 @@ module.exports = {
       padding: "2rem"
     },
     fontSize: {
-      xs: ".75rem",
-      sm: ".9rem",
-      base: "1.0rem",
-      "md": "1.1rem",
-      lg: "1.8rem",
-      xl: "2.0rem",
-      "brand": "2.0rem",
-      "2xl": "2.5rem",
-      "3xl": "2.875rem",
-      "4xl": "3.25rem"
+      small: "1.6rem",
+      smaller: "1.9rem",
+      base: "2.0rem",
+      lg: "3.6rem",
+      xl: "3.8rem",
+      brand: "2.6rem",
     },
     fontFamily: {
-      display: ["lato"],
-      body: ["lato"]
+      sans: ["lato"],
+      body: ["Noto Sans"]
     },
     screens: {
       sm: "640px",
@@ -26,7 +22,7 @@ module.exports = {
       lg: "1024px"
     },
     colors: {
-      white:{
+      white: {
         default: "#FFF"
       },
       blue: {

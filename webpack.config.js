@@ -1,24 +1,8 @@
 const webpack = require("webpack");
 const path = require("path");
-const glob = require("glob");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-//const PurgecssPlugin = require("purgecss-webpack-plugin");
-
-//new PurgecssPlugin({
-//extractor: class TailwindExtractor {
-//static extract(content) {
-//return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-//}
-//},
-//extensions: ["html"],
-//paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
-//})
-
-const PATHS = {
-  src: path.join(__dirname, "src")
-};
 
 module.exports = (env, argv) => {
   console.info("running in mode:", argv.mode);
@@ -43,17 +27,9 @@ module.exports = (env, argv) => {
         {
           test: /\.css$/i,
           use: [
-            {
-              loader: MiniCssExtractPlugin.loader
-            },
+            MiniCssExtractPlugin.loader,
             "css-loader",
-            {
-              loader: "postcss-loader",
-              options: {
-                ident: "postcss",
-                plugins: [require("tailwindcss"), require("autoprefixer")]
-              }
-            }
+            "postcss-loader"
           ]
         }
       ]

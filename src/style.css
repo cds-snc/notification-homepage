@@ -47,7 +47,7 @@ li{
 
 .input{
   border-color:#000;
-  @apply border-solid border-2 py-3 px-2 text-smaller w-3/6; 
+  @apply border-solid border-2 py-3 px-2 text-smaller; 
 }
 
 label{

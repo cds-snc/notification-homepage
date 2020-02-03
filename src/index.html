@@ -46,12 +46,12 @@
             <nav class="flex pt-4 mb-10 lg:mb-0">
               <a
                 href="#"
-                class="text-small underline hover:no-underline leading-none inline-block text-blue"
+                class="leading-none inline-block text-blue text-small underline hover:no-underline"
                 >Français</a
               >
               <a
                 href="#"
-                class="text-small underline hover:no-underline leading-none inline-block pl-5 text-blue"
+                class="leading-none inline-block text-blue text-small pl-5 underline hover:no-underline"
                 >Log in</a
               >
             </nav>
@@ -96,8 +96,14 @@
                 Try Notify if you work in the federal government.
               </p>
               <div class="pt-10">
-                <a href="#" class="btn-blue mr-10">Create an account</a>
-                <a href="#" class="text-white text-default">Log in</a>
+                <a href="#" class="btn-blue mr-10 hover:bg-blue-selected"
+                  >Create an account</a
+                >
+                <a
+                  href="#"
+                  class="text-white text-default underline hover:no-underline"
+                  >Log in</a
+                >
               </div>
             </div>
             <div class="ml-10 image-content hidden lg:block">
@@ -364,7 +370,7 @@
                 Your name
               </label>
               <input
-                class="input focus:shadow-outline"
+                class="input focus:shadow-outline  w-full lg:w-3/6"
                 name="name"
                 type="text"
                 value=""
@@ -379,7 +385,7 @@
               </label>
 
               <input
-                class="input focus:shadow-outline"
+                class="input focus:shadow-outline  w-full lg:w-3/6"
                 name="email_address"
                 type="email"
                 value=""
@@ -393,20 +399,21 @@
               </label>
 
               <textarea
-                class="input focus:shadow-outline"
+                class="input focus:shadow-outline w-full lg:w-3/6"
                 name="feedback"
                 rows="8"
               ></textarea>
             </div>
 
             <div class="mt-10">
-              <button type="submit" class="btn-light text-base">
+              <button
+                type="submit"
+                class="btn-light text-base hover:bg-gray-selected"
+              >
                 Send
               </button>
             </div>
           </form>
-
-          <!-- -->
         </div>
 
         <!-- -->
@@ -418,16 +425,34 @@
       <div class="container px-10 py-10">
         <div class="flex pt-10 pb-10">
           <nav class="block mr-20">
-            <a href="#" class="text-white text-small block mb-2"
+            <a
+              href="#"
+              class="text-white text-small block mb-2 underline hover:no-underline"
               >Service Status</a
             >
-            <a href="#" class="text-white text-small block">Performance</a>
+            <a
+              href="#"
+              class="text-white text-small block underline hover:no-underline"
+              >Performance</a
+            >
           </nav>
 
           <nav class="block">
-            <a href="#" class="text-white text-small block mb-2">Privacy</a>
-            <a href="#" class="text-white text-small block mb-2">Security</a>
-            <a href="#" class="text-white text-small block">Terms of Use</a>
+            <a
+              href="#"
+              class="text-white text-small block mb-2 underline hover:no-underline"
+              >Privacy</a
+            >
+            <a
+              href="#"
+              class="text-white text-small block mb-2 underline hover:no-underline"
+              >Security</a
+            >
+            <a
+              href="#"
+              class="text-white text-small block underline hover:no-underline"
+              >Terms of Use</a
+            >
           </nav>
         </div>
       </div>

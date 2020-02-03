@@ -7,13 +7,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 //const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 //new PurgecssPlugin({
-  //extractor: class TailwindExtractor {
-    //static extract(content) {
-      //return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-    //}
-  //},
-  //extensions: ["html"],
-  //paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
+//extractor: class TailwindExtractor {
+//static extract(content) {
+//return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+//}
+//},
+//extensions: ["html"],
+//paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
 //})
 
 const PATHS = {
@@ -30,6 +30,7 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, "dist"),
       filename: "bundle.js"
     },
+    stats: "errors-only",
     module: {
       rules: [
         {

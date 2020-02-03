@@ -4,7 +4,7 @@ module.exports = {
       center: true
     },
     boxShadow: {
-      outline: '0 0 0 3px rgba(255, 191, 71, 1)',
+      outline: "0 0 0 3px rgba(255, 191, 71, 1)"
     },
     fontSize: {
       small: "1.6rem",
@@ -29,10 +29,12 @@ module.exports = {
       },
       blue: {
         lighter: "#B2E3FF",
-        default: "#26374A"
+        default: "#26374A",
+        selected: "#75b9e0"
       },
       gray: {
-        default: "#EEE"
+        default: "#EEE",
+        selected: "#e1e4e7"
       },
       yellow: {
         default: "#ffbf47"
@@ -40,7 +42,6 @@ module.exports = {
       green: {
         default: "#00703C",
         darker: "#002D18"
-       
       }
     }
   },

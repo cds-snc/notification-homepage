@@ -16,11 +16,11 @@ a {
   @apply underline text-base;
 }
 
-p{
+p {
   @apply text-base leading-tight;
 }
 
-li{
+li {
   @apply text-base leading-tight;
 }
 
@@ -34,7 +34,7 @@ li{
   border-color: theme("colors.green.default");
   background-color: theme("colors.white");
   @apply py-2 px-5 font-bold no-underline border-2;
-  border-bottom: 4px solid theme("colors.green.dark");;
+  border-bottom: 4px solid theme("colors.green.dark");
 }
 
 .btn-blue:hover {
@@ -45,17 +45,27 @@ li{
 
 @tailwind utilities;
 
-.input{
-  border-color:#000;
-  @apply border-solid border-2 py-3 px-2 text-smaller; 
+.input {
+  border-color: #000;
+  @apply border-solid border-2 py-3 px-2 text-smaller;
 }
 
-label{
-  @apply block text-smaller pt-10 pb-2
+.nav{
+  transition: all 0.1s ease-out;
 }
 
-@variants focus{
-  .input{
+.flip {
+  transform: rotate(-180deg);
+  transition: all 0.5s ease;
+  padding-top: 2px;
+}
+
+label {
+  @apply block text-smaller pt-10 pb-2;
+}
+
+@variants focus {
+  .input {
     @apply outline-none;
   }
 }

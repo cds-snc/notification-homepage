@@ -62,23 +62,70 @@
         <!-- start main nav -->
         <nav class="bg-gray py-3">
           <div class="container px-10">
-            <a
-              href="#"
-              class="text-small text-blue mr-5 font-bold no-underline hover:underline"
-              >Features</a
-            >
-            <a
-              href="#"
-              class="text-small text-blue mr-5 font-bold no-underline hover:underline"
-              >Documentation</a
-            >
-            <a
-              href="#"
-              class="text-small text-blue mr-5 font-bold no-underline hover:underline"
-              >Support</a
-            >
+            <div class="lg:hidden">
+              <a
+                href="#"
+                id="menu"
+                class="px-4 text-small text-blue mr-5 font-bold no-underline hover:underline"
+                >Menu
+                <img
+                  alt=""
+                  class="inline-block mobile-arrow ml-5"
+                  src="<%=require('./img/arrow-down.svg')%>"
+                  width="20"
+                />
+              </a>
+            </div>
+
+            <div class="hidden lg:block">
+              <a
+                href="#"
+                class="text-small text-blue mr-5 font-bold no-underline hover:underline"
+                >Features</a
+              >
+              <a
+                href="#"
+                class="text-small text-blue mr-5 font-bold no-underline hover:underline"
+                >Documentation</a
+              >
+              <a
+                href="#"
+                class="text-small text-blue mr-5 font-bold no-underline hover:underline"
+                >Support</a
+              >
+            </div>
           </div>
         </nav>
+
+        <!--  start mobile navigation -->
+        <div class="mobile-nav container px-10 hidden lg:hidden">
+          <div class="absolute bg-white w-5/12 p-5 border-b-4">
+            <ul class="pt-2">
+              <li>
+                <a
+                  class="block text-small mb-5 no-underline hover:underline"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block text-small mb-5 no-underline hover:underline"
+                  href="#"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block text-small mb-5 no-underline hover:underline"
+                  href="#"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--  end mobile navigation -->
         <!-- end main nav -->
       </header>
       <!-- end header -->

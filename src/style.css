@@ -7,9 +7,11 @@ html {
 h1 {
   @apply text-xl font-sans pb-10;
 }
+
 h2 {
   @apply text-lg font-sans pb-6;
 }
+
 a {
   @apply underline text-base;
 }
@@ -21,6 +23,8 @@ p{
 li{
   @apply text-base leading-tight;
 }
+
+
 
 .btn-blue {
   background-color: theme("colors.blue.lighter");
@@ -34,3 +38,18 @@ li{
 @tailwind components;
 
 @tailwind utilities;
+
+.input{
+  border-color:#000;
+  @apply border-solid border-2 py-3 px-2 text-smaller w-3/6; 
+}
+
+label{
+  @apply block text-smaller pt-10 pb-2
+}
+
+@variants focus{
+  .input{
+    @apply outline-none;
+  }
+}

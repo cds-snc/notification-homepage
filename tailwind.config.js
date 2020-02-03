@@ -1,7 +1,10 @@
 module.exports = {
   theme: {
     container: {
-      center: true,
+      center: true
+    },
+    boxShadow: {
+      outline: '0 0 0 3px rgba(255, 191, 71, 1)',
     },
     fontSize: {
       small: "1.6rem",
@@ -30,9 +33,11 @@ module.exports = {
       },
       gray: {
         default: "#EEE"
+      },
+      yellow: {
+        default: "#ffbf47"
       }
-    },
-    extend: {}
+    }
   },
   plugins: []
 };

@@ -20,10 +20,16 @@
       <header>
         <div class="container px-10">
           <!-- start sub nav -->
-          <div class="flex flex-col flex-col-reverse lg:flex-row py-5 lg:py-10 lg:justify-between">
+          <div
+            class="flex flex-col flex-col-reverse lg:flex-row py-5 lg:py-10 lg:justify-between"
+          >
             <div class="flex flex-col lg:flex-row">
               <div class="lg:py-1">
-                <img alt="" width="250" src="<%=require('./img/canada-ca.svg')%>" />
+                <img
+                  alt=""
+                  width="250"
+                  src="<%=require('./img/canada-ca.svg')%>"
+                />
               </div>
               <div class="product-title flex mt-10 mb-10 lg:mt-0 lg:mb-0">
                 <h1
@@ -79,7 +85,9 @@
       <!-- start section 1 -->
       <div class="bg-blue">
         <div class="container px-10">
-          <div class="flex flex-col lg:flex-row justify-between pt-16 pb-20 lg:pb-16">
+          <div
+            class="flex flex-col lg:flex-row justify-between pt-16 pb-20 lg:pb-16"
+          >
             <div class="text-content max-w-4xl">
               <h2 class="text-white leading-tight font-bold">
                 Send service updates easily by email and text message
@@ -93,7 +101,11 @@
               </div>
             </div>
             <div class="ml-10 image-content hidden lg:block">
-              <img alt="" src="<%=require('./img/section-1.svg')%>" width="350" />
+              <img
+                alt=""
+                src="<%=require('./img/section-1.svg')%>"
+                width="350"
+              />
             </div>
           </div>
         </div>
@@ -105,7 +117,11 @@
         <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <div class="image-content pb-10 lg:pb-0">
-              <img alt="" class="max-w-full md:max-w-xl" src="<%=require('./img/section-2.svg')%>" />
+              <img
+                alt=""
+                class="max-w-full md:max-w-xl"
+                src="<%=require('./img/section-2.svg')%>"
+              />
             </div>
             <div class="text-content lg:max-w-4xl">
               <h2 class="leading-tight font-bold">
@@ -152,7 +168,11 @@
             </div>
 
             <div class="image-content flex flex-auto lg:justify-center">
-              <img alt="" class="max-w-full md:max-w-xl" src="<%=require('./img/section-3.svg')%>" />
+              <img
+                alt=""
+                class="max-w-full md:max-w-xl"
+                src="<%=require('./img/section-3.svg')%>"
+              />
             </div>
             <!-- -->
           </div>
@@ -168,7 +188,11 @@
             <div
               class="image-content flex flex-auto lg:justify-center pb-10 lg:pb-0"
             >
-              <img alt="" class="max-w-full md:max-w-xl" src="<%=require('./img/section-4.svg')%>" />
+              <img
+                alt=""
+                class="max-w-full md:max-w-xl"
+                src="<%=require('./img/section-4.svg')%>"
+              />
             </div>
 
             <!-- -->
@@ -226,7 +250,6 @@
                 alt=""
                 class="max-w-full md:max-w-xl block align-top"
                 src="<%=require('./img/section-5.svg')%>"
-                
               />
             </div>
           </div>
@@ -333,73 +356,55 @@
         <!-- -->
         <div class="py-10">
           <h2 class="leading-tight font-bold">Contact the Notify team</h2>
-
           <!-- -->
-          <!--           
-            
-            <form method="post" autocomplete="off" novalidate="">
-            <div class="form-group" data-module="">
-              <label class="form-label" for="name">
+          <form method="post" autocomplete="off" novalidate="">
+            <!-- start field 1 -->
+            <div class="form-group">
+              <label for="name">
                 Your name
               </label>
-
               <input
-                class="form-control form-control-1-1 "
-                data-module=""
-                id="name"
+                class="input focus:shadow-outline"
                 name="name"
-                required=""
-                rows="8"
                 type="text"
                 value=""
               />
             </div>
+            <!-- end field 1 -->
 
-            <div class="form-group" data-module="">
-              <label class="form-label" for="email_address">
+            <!-- start field 2 -->
+            <div class="form-group">
+              <label for="email_address">
                 Your email
               </label>
 
               <input
-                class="form-control form-control-1-1 "
-                data-module=""
-                id="email_address"
+                class="input focus:shadow-outline"
                 name="email_address"
-                required=""
-                rows="8"
-                spellcheck="false"
                 type="email"
                 value=""
               />
             </div>
+            <!-- start field 2 -->
 
-            <div class="form-group" data-module="">
-              <label class="form-label" for="feedback">
+            <div class="form-group">
+              <label for="feedback">
                 Message
               </label>
 
               <textarea
-                class="form-control form-control-1-1 "
-                data-module=""
-                id="feedback"
+                class="input focus:shadow-outline"
                 name="feedback"
-                required=""
-                rows="10"
+                rows="8"
               ></textarea>
             </div>
 
-            <div class="page-footer">
-              <input
-                type="hidden"
-                name="csrf_token"
-                value="IjE3ZTFlZjdiZTY0NTE3ZGZjODhmN2I3ZTI1YzZiYmIzNDYyODM2OTEi.ERWrhQ.7DHvzrcUbf5yyYQG0Jvsi3Wxr_c"
-              />
+            <div>
               <button data-button-id="btn" type="submit" class="button">
                 Send
               </button>
             </div>
           </form>
-          -->
 
           <!-- -->
         </div>
@@ -432,7 +437,11 @@
     <div class="bg-gray">
       <div class="container px-10 py-10">
         <div class="flex py-10 justify-end">
-          <img alt="" src="<%=require('./img/goc--footer-logo.svg')%>" width="150" />
+          <img
+            alt=""
+            src="<%=require('./img/goc--footer-logo.svg')%>"
+            width="150"
+          />
         </div>
       </div>
     </div>

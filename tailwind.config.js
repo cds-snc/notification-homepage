@@ -15,8 +15,8 @@ module.exports = {
       brand: "2.6rem"
     },
     fontFamily: {
-      sans: ["sans-serif", "lato"],
-      body: ["sans-serif", "Noto Sans"]
+      sans: ["lato"],
+      body: ["Noto Sans"]
     },
     screens: {
       sm: "640rem",

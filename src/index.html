@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Notify v1</title>
@@ -19,14 +18,14 @@
     <div>
       <!-- start header -->
       <header>
-        <div class="container">
+        <div class="container px-10">
           <!-- start sub nav -->
-          <div class="flex py-10 justify-between">
+          <div class="flex flex-col flex-col-reverse lg:flex-row py-5 lg:py-10 lg:justify-between">
             <div class="flex flex-col lg:flex-row">
-              <div class="py-1">
-                <img alt="" src="<%=require('./img/canada-ca.svg')%>" width="250" />
+              <div class="lg:py-1">
+                <img alt="" width="250" src="<%=require('./img/canada-ca.svg')%>" />
               </div>
-              <div class="product-title flex mt-10 lg:mt-0">
+              <div class="product-title flex mt-10 mb-10 lg:mt-0 lg:mb-0">
                 <h1
                   class="leading-none lg:ml-4 mr-3 lg:pl-5 font-semibold inline-block top-0 text-brand pb-0"
                 >
@@ -38,7 +37,7 @@
               </div>
             </div>
             <!-- start sub nav -->
-            <nav class="flex pt-4">
+            <nav class="flex pt-4 mb-10 lg:mb-0">
               <a
                 href="#"
                 class="text-small underline hover:no-underline leading-none inline-block text-blue"
@@ -56,7 +55,7 @@
 
         <!-- start main nav -->
         <nav class="bg-gray py-3">
-          <div class="container">
+          <div class="container px-10">
             <a
               href="#"
               class="text-small text-blue mr-5 font-bold no-underline hover:underline"
@@ -79,8 +78,8 @@
       <!-- end header -->
       <!-- start section 1 -->
       <div class="bg-blue">
-        <div class="container">
-          <div class="flex flex-col lg:flex-row justify-between py-10">
+        <div class="container px-10">
+          <div class="flex flex-col lg:flex-row justify-between pt-16 pb-20 lg:pb-16">
             <div class="text-content max-w-4xl">
               <h2 class="text-white leading-tight font-bold">
                 Send service updates easily by email and text message
@@ -103,10 +102,10 @@
 
       <!-- start section 2 -->
       <div class="bg-white">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <div class="image-content pb-10 lg:pb-0">
-              <img alt="" src="<%=require('./img/section-2.svg')%>" width="350" />
+              <img alt="" class="max-w-full md:max-w-xl" src="<%=require('./img/section-2.svg')%>" />
             </div>
             <div class="text-content lg:max-w-4xl">
               <h2 class="leading-tight font-bold">
@@ -131,7 +130,7 @@
 
       <!-- start section 3 -->
       <div class="bg-gray">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <!-- -->
             <div class="text-content max-w-4xl pb-10 lg:pb-0">
@@ -153,7 +152,7 @@
             </div>
 
             <div class="image-content flex flex-auto lg:justify-center">
-              <img alt="" src="<%=require('./img/section-3.svg')%>" width="350" />
+              <img alt="" class="max-w-full md:max-w-xl" src="<%=require('./img/section-3.svg')%>" />
             </div>
             <!-- -->
           </div>
@@ -163,13 +162,13 @@
 
       <!-- start section 4 -->
       <div class="bg-white">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <!-- -->
             <div
               class="image-content flex flex-auto lg:justify-center pb-10 lg:pb-0"
             >
-              <img alt="" src="<%=require('./img/section-4.svg')%>" width="350" />
+              <img alt="" class="max-w-full md:max-w-xl" src="<%=require('./img/section-4.svg')%>" />
             </div>
 
             <!-- -->
@@ -201,7 +200,7 @@
 
       <!-- start section 5 -->
       <div class="bg-gray">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <div class="text-content max-w-3xl pb-10 lg:pb-0">
               <h2 class="leading-tight font-bold">
@@ -221,13 +220,13 @@
               </p>
             </div>
             <div
-              class="image-content flex flex-auto lg:justify-center lg:content-start"
+              class="image-content pt-10 lg:pt-0 flex flex-auto lg:justify-center lg:content-start"
             >
               <img
                 alt=""
-                class="block align-top"
+                class="max-w-full md:max-w-xl block align-top"
                 src="<%=require('./img/section-5.svg')%>"
-                width="350"
+                
               />
             </div>
           </div>
@@ -237,14 +236,13 @@
 
       <!-- start section 6 -->
       <div class="bg-white">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <div class="image-content flex flex-auto lg:justify-center">
               <img
                 alt=""
-                class="inline-block pb-10 lg:pb-0"
+                class="inline-block pb-10 lg:pb-0 max-w-full md:max-w-xl "
                 src="<%=require('./img/section-6.svg')%>"
-                width="261"
               />
             </div>
             <div class="text-content max-w-4xl">
@@ -273,7 +271,7 @@
 
       <!-- start section 7 -->
       <div class="bg-gray">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="py-10">
             <h2 class="leading-tight font-bold">
               These teams are already using Notify
@@ -311,7 +309,7 @@
 
       <!-- start section 8 -->
       <div class="bg-blue">
-        <div class="container">
+        <div class="container px-10 py-10">
           <div class="pt-20 flex justify-center">
             <div>
               <h2 class="text-white leading-tight font-bold text-center">
@@ -331,7 +329,7 @@
     </div>
 
     <div class="bg-gray">
-      <div class="container">
+      <div class="container px-10 py-10">
         <!-- -->
         <div class="py-10">
           <h2 class="leading-tight font-bold">Contact the Notify team</h2>
@@ -412,7 +410,7 @@
 
     <!-- start section 9 -->
     <div class="bg-blue">
-      <div class="container">
+      <div class="container px-10 py-10">
         <div class="flex pt-10 pb-10">
           <nav class="block mr-20">
             <a href="#" class="text-white text-small block mb-2"
@@ -432,7 +430,7 @@
 
     <!-- start section 9 -->
     <div class="bg-gray">
-      <div class="container">
+      <div class="container px-10 py-10">
         <div class="flex py-10 justify-end">
           <img alt="" src="<%=require('./img/goc--footer-logo.svg')%>" width="150" />
         </div>

@@ -57,11 +57,52 @@ li {
 }
 
 label {
-  @apply block text-smaller pt-10 pb-2;
+  @apply block text-smaller pb-2;
 }
 
 @variants focus {
   .input {
     @apply outline-none;
   }
+}
+
+
+/**/
+
+.form-group{
+  @apply mb-4;
+}
+
+.form-group-error {
+  margin-right: 15px;
+  border-left: 4px solid #b10e1e;
+  padding-left: 10px;
+}
+
+.form-control-error {
+  border: 4px solid #b10e1e;
+}
+
+.error-message {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #b10e1e;
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 2px 0;
+}
+
+/* honeypot field*/
+.phone {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
 }

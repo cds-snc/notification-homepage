@@ -165,7 +165,11 @@
       <!-- end section 1 -->
 
       <!-- start section 2 -->
-      <div class="bg-white" aria-label="A platform built for government" role="complementary">
+      <div
+        class="bg-white"
+        aria-label="A platform built for government"
+        role="complementary"
+      >
         <div class="container px-10 py-10">
           <div class="flex flex-col lg:flex-row justify-between py-10">
             <div class="image-content pb-10 lg:pb-0">
@@ -235,43 +239,65 @@
       <!-- start section 4 -->
       <div class="bg-white" role="complementary">
         <div class="container px-10 py-10">
-          <div class="flex flex-col lg:flex-row justify-between py-10">
-            <!-- -->
-            <div
-              class="image-content flex flex-auto lg:justify-center pb-10 lg:pb-0"
-            >
+          <div class="flex justify-center">
+            <h2 class="leading-tight font-bold">
+              What you can do with Notify
+            </h2>
+          </div>
+    
+          <div class="flex justify-between py-10">
+            <!-- note box -->
+            <div class="feature-box">
               <img
                 alt=""
-                class="max-w-full md:max-w-xl"
-                src="<%=require('./img/section-4.svg')%>"
+                
+                src="<%=require('./img/homepage/recipients.svg')%>"
+               
               />
+    
+              <div class="text-small">
+                Replace Word documents and Excel spreadsheets with a secure
+                database of contacts and messages
+              </div>
             </div>
-
-            <!-- -->
-            <div class="text-content max-w-4xl">
-              <h2 class="leading-tight font-bold">What Notify can do</h2>
-              <ul class="list-disc ml-5">
-                <li class="pt-4">
-                  Replace Word documents and spreadsheets with a secure database
-                  of contacts and messages
-                </li>
-                <li class="pt-4">
-                  Save time and meet service standards with templates and shared
-                  messaging components
-                </li>
-                <li class="pt-4">
-                  Measure the effectiveness of your service with detailed
-                  analytics
-                </li>
-              </ul>
-              <p class="pt-4 text-blue">
-                <a href="#">See how Notify can improve your workflow</a>
-              </p>
+            <!-- end note box -->
+    
+            <!-- note box -->
+            <div class="feature-box ml-10 mr-10">
+              <img
+                alt=""
+                
+                src="<%=require('./img/homepage/text-messages.svg')%>"
+                
+              />
+    
+              <div class="text-small">
+                Save time and meet service standards with templates and shared
+                messaging components
+              </div>
             </div>
+            <!-- end note box -->
+    
+            <!-- note box -->
+            <div class="feature-box">
+              <img
+                alt=""
+                
+                src="<%=require('./img/homepage/dashboard.svg')%>"
+                
+              />
+    
+              <div class="text-small">
+                Measure the effectiveness of your service with detailed
+                analytics
+              </div>
+            </div>
+            <!-- end note box -->
+    
             <!-- -->
           </div>
         </div>
-      </div>
+       
       <!-- end section 4 -->
 
       <!-- start section 5 -->
@@ -345,42 +371,59 @@
       <!-- end section 6 -->
 
       <!-- start section 7 -->
-      <div class="bg-gray" role="complementary">
-        <div class="container px-10 py-10">
-          <div class="py-10">
-            <h2 class="leading-tight font-bold">
-              These teams are already using Notify
-            </h2>
+    <div class="bg-gray" role="complementary">
+      <div class="container px-10 py-10">
+        <div class="py-10">
+          <h2 class="leading-tight font-bold">
+            {{ _("These teams are already using Notify") }}
+          </h2>
 
-            <div class="flex flex-col lg:flex-row justify-between">
-              <!-- start column 1-->
-              <div class="max-w-3xl pt-10">
-                <p>
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec pellentesque orci sed volutpat convallis volutpat mollis
-                  eros in laoreet a risus ligula.”
-                </p>
-                <p class="pt-10">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec pellentesque orci sed volutpat convallis volutpat mollis
-                  eros in laoreet a risus ligula.”
-                </p>
+          <div class="flex flex-col lg:flex-row justify-between">
+            <!-- start column 1-->
+            <div class="max-w-3xl pt-10">
+              <div class="quote-box">
+                <div>“Easy set up that only took an hour.”</div>
+                <div>— Calvin Rodo, Economic and Social Development Canada</div>
               </div>
-              <!-- end column 1-->
-              <!-- start column 2-->
-              <div class="max-w-3xl pt-10">
-                <p>
-                  “Fusce volutpat mollis eros in laoreet. In a risus ligula.
-                  Integer pharetra turpis eget leo tincidunt, nec aliquet enim
-                  iaculis.“
-                </p>
+
+              <div class="quote-box">
+                <div>
+                  “It is the only solution we have found that is ready and we
+                  appreciate the effort of making it simple to use for GC
+                  employees.”
+                </div>
+                <div>— Catherine Dufour, Canada Revenue Agency</div>
               </div>
-              <!-- end column 2-->
+
+             
             </div>
+            <!-- end column 1-->
+            <!-- start column 2-->
+            <div class="max-w-3xl pt-10">
+              
+              <div class="quote-box">
+                <div>
+                  “It worked with minimal frustration and configuration.“
+                </div>
+                <div>— Ryan Hyma, Treasury Board Secretariat</div>
+              </div>
+
+              <div class="quote-box">
+                <div>
+                  “It’s governmental, trusted and we receive help from the
+                  development group.”
+                </div>
+                <div>
+                  — Abdulkader Hamdo, Department of Fisheries and Oceans
+                </div>
+              </div>
+            </div>
+            <!-- end column 2-->
           </div>
         </div>
       </div>
-      <!-- end section 7 -->
+    </div>
+    <!-- end section 7 -->
 
       <!-- start section 8 -->
       <div class="bg-blue" role="complementary">
@@ -413,12 +456,15 @@
           <!-- -->
           <form method="post" autocomplete="off" novalidate="">
             <!-- start field 1 -->
-            <div class="form-group">
+            <div class="form-group form-group-error">
               <label for="name">
                 Your name
               </label>
+              <span class="error-message">
+                Can’t be empty
+              </span>
               <input
-                class="input focus:shadow-outline  w-full lg:w-3/6"
+                class="input focus:shadow-outline w-full lg:w-3/6 form-control-error"
                 id="name"
                 name="name"
                 type="text"
@@ -426,6 +472,17 @@
               />
             </div>
             <!-- end field 1 -->
+
+            <div class="form-group">
+              <label for="support_type">
+                Request Type
+              </label>
+              <select class="input focus:shadow-outline w-full lg:w-3/6" name="support_type">
+                <option value="Ask a question">Ask a question</option>
+                <option value="Give feedback">Give feedback</option>
+                <option value="Set up a demo">Set up a demo</option>
+              </select>
+            </div>
 
             <!-- start field 2 -->
             <div class="form-group">

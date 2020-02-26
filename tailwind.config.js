@@ -24,6 +24,9 @@ module.exports = {
       lg: "1024px"
     },
     colors: {
+      red: {
+        default: "#b10e1e"
+      },
       white: {
         default: "#FFF"
       },

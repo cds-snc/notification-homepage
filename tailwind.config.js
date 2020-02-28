@@ -6,6 +6,9 @@ module.exports = {
     boxShadow: {
       outline: "0 0 0 3px rgba(255, 191, 71, 1)"
     },
+    maxWidth: {
+      "4xl": "53rem",
+    },
     fontSize: {
       small: "1.6rem",
       smaller: "1.9rem",

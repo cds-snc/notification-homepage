@@ -5,6 +5,7 @@ console.log("=== POST CSS  ===");
 const purgecss = require("@fullhuman/postcss-purgecss")({
   content: ["./src/**/*.html"],
   whitelist: [
+    "line-under",
     "flip",
     "phone",
     "error-message",

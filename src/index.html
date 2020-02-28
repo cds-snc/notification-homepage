@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Notify v2</title>
+    <title>Notify v3</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap"
       rel="stylesheet"
@@ -53,7 +53,7 @@
         <!-- start sub nav -->
         <nav aria-label="Language & Login" class="flex pt-4 mb-10 lg:mb-0">
           <a
-            class="line-under leading-none inline-block text-blue text-small underline hover:no-underline"
+            class="mr-10 line-under leading-none inline-block text-blue text-small underline hover:no-underline"
             href="#"
           >
             Français
@@ -76,13 +76,13 @@
           <a
             href="#"
             id="menu"
-            class="px-4 text-small text-blue mr-5 font-bold no-underline hover:underline"
+            class="px-2 text-small text-blue mr-5 font-bold no-underline hover:underline"
           >
-            {{ _("Menu") }}
+            Menu
 
             <img
               alt=""
-              class="inline-block mobile-arrow ml-5"
+              class="inline-block mobile-arrow ml-2"
               src="data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E %3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E %3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='960px' height='560px' viewBox='0 0 960 560' enable-background='new 0 0 960 560' xml:space='preserve'%3E %3Cg id='Rounded_Rectangle_33_copy_4_1_'%3E %3Cpath d='M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937 c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937 c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z'/%3E %3C/g%3E %3C/svg%3E"
               width="20"
             />
@@ -90,15 +90,15 @@
         </div>
         <div class="hidden lg:block">
           <a href="#"
-            class="text-small text-blue mr-5 font-bold no-underline hover:underline"
+            class="text-small text-blue mr-10 font-bold no-underline hover:underline"
             >Product features</a>
           <a
             href="#"
-            class="text-small text-blue mr-5 font-bold no-underline hover:underline"
+            class="text-small text-blue mr-10 font-bold no-underline hover:underline"
             >Technical documentation</a>
           <a
             href="#"
-            class="text-small text-blue mr-5 font-bold no-underline hover:underline"
+            class="text-small text-blue mr-10 font-bold no-underline hover:underline"
             >Contact us
           </a>
         </div>
@@ -136,18 +136,18 @@
   <!-- end header -->
   <!-- start section 1 -->
   <div class="bg-blue" role="main">
-    <div class="container px-10">
+    <div class="container py-24">
       <div
-        class="flex flex-col lg:flex-row justify-between pt-16 pb-20 lg:pb-16"
+        class="flex flex-col lg:flex-row justify-between "
       >
         <div class="text-content max-w-4xl">
           <h2 class="pb-0 text-white leading-tight font-bold">
             Send service updates by email and text message
           </h2>
-          <p class="pt-3 pb-10 text-white">
+          <p class="pt-10 pb-20 text-white">
             Try out <i>Notify</i>, a new messaging platform for the Government of Canada.
           </p>
-          <div class="pt-0">
+          <div class="pt-0  mb-10">
             <a
               href="#"
               class="btn-blue mr-10 hover:bg-blue-selected"
@@ -160,12 +160,12 @@
             >
           </div>
         </div>
-        <div class="pt-6 pb-6 ml-10 image-content hidden lg:block">
+        <div class="pt-6 ml-10 image-content hidden lg:block">
           <img
             loading="lazy"
             alt=""
             src="<%=require('./img/homepage/mac-phone.svg')%>"
-            width="300"
+            width="350"
           />
         </div>
       </div>
@@ -175,8 +175,8 @@
 
   <!-- start section 2 -->
   <div class="bg-white">
-    <div class="container px-10 py-10">
-      <div class="flex flex-col lg:flex-row justify-between py-10">
+    <div class="container px-10 py-0">
+      <div class="flex flex-col lg:flex-row justify-between py-24">
         <div class="image-content pb-10 lg:pb-0">
           
           <h2 class="leading-tight font-bold lg:hidden">
@@ -187,7 +187,7 @@
             <img
               loading="lazy"
               alt=""
-              width="370"
+              width="390"
               class=""
               src="<%=require('./img/homepage/letter-en.svg')%>"
             />
@@ -217,8 +217,8 @@
 
   <!-- start section 3 -->
   <div class="bg-gray">
-    <div class="container px-10 py-10">
-      <div class="flex flex-col lg:flex-row justify-between py-10">
+    <div class="container px-10 py-0">
+      <div class="flex flex-col lg:flex-row justify-between py-24">
         <!-- -->
         <div class="text-content max-w-4xl pb-10 lg:pb-0">
           <h2 class="leading-tight font-bold">
@@ -241,7 +241,11 @@
         </div>
 
         <div class="image-content flex flex-auto lg:justify-center">
-          <img loading="lazy" alt="" class="max-w-full md:max-w-xl" />
+          <img loading="lazy" alt="" 
+          width="400"
+          style="object-fit: contain; object-position: 0% 50%;"
+          src="<%=require('./img/homepage/built4you.svg')%>"
+          class="max-w-full md:max-w-xl" />
         </div>
         <!-- -->
       </div>
@@ -251,7 +255,7 @@
 
   <!-- start section 4 -->
   <div class="bg-white">
-    <div class="container px-10 py-10">
+    <div class="container px-10 py-24">
       <div class="flex justify-center">
         <h2 class="leading-tight font-bold">
           What you can do with <i>Notify</i>
@@ -266,7 +270,7 @@
             <img
               alt=""
               loading="lazy"
-              width="300"
+              width="400"
               src="<%=require('./img/homepage/recipients-en.svg')%>"
               
             />
@@ -285,7 +289,7 @@
             <img
               alt=""
               loading="lazy"
-              width="300"
+              width="400"
               src="<%=require('./img/homepage/text-messages-en.svg')%>"
               
             />
@@ -304,7 +308,7 @@
             <img
               alt=""
               loading="lazy"
-              width="300"
+              width="400"
               src="<%=require('./img/homepage/dashboard-en.svg')%>"
              
             />
@@ -321,7 +325,7 @@
 
       <div class="flex lg:justify-center">
         <a
-          class="line-under py-10 inline-block text-blue text-base underline hover:no-underline"
+          class="line-under pt-10 inline-block text-blue text-base underline hover:no-underline"
           href="#"
           >See how <i>Notify</i> can improve your workflow</a
         >
@@ -331,8 +335,8 @@
 
     <!-- start section 5 -->
     <div class="bg-gray">
-      <div class="container px-10 py-10">
-        <div class="flex flex-col lg:flex-row justify-between py-10">
+      <div class="container px-10 py-0">
+        <div class="flex flex-col lg:flex-row justify-between py-24">
           <div class="text-content max-w-4xl pb-10 lg:pb-0">
             <h2 class="leading-tight font-bold">
               Integrate <i>Notify</i> into your system
@@ -342,12 +346,12 @@
               alt=""
               loading="lazy"
               class="max-w-full md:max-w-xl block align-top lg:hidden"
-              width="400"
-              src="<%=require('./img/homepage/cloud-flow.svg')%>"
+              width="390"
+              src="<%=require('./img/homepage/integrate.svg')%>"
               
             />
            
-            <p class="pt-4">
+            <p class="block pt-20 lg:pt-4">
               You can integrate <i>Notify</i> with your current system to take
               advantage of its secure, cloud-based messaging tools.
             </p>
@@ -370,9 +374,9 @@
               alt=""
               loading="lazy"
               class="max-w-full md:max-w-xl block align-top hidden lg:block"
-              width="350"
-              style="object-fit: contain; object-position: 0% 10%;"
-              src="<%=require('./img/homepage/cloud-flow.svg')%>"
+              width="400"
+              style="object-fit: contain; object-position: 0% 50%;"
+              src="<%=require('./img/homepage/integrate.svg')%>"
             />
           </div>
         </div>
@@ -382,19 +386,19 @@
 
     <!-- start section 6 -->
     <div class="bg-white">
-      <div class="container px-10 py-10">
+      <div class="container px-10 py-24">
 
         <h2 class="leading-tight font-bold lg:hidden">
           <i>Notify</i> is free for Government of Canada services
         </h2>
-        <div class="flex flex-col lg:flex-row justify-between py-10">
+        <div class="flex flex-col lg:flex-row justify-between">
           
           <div class="image-content flex flex-auto justify-start lg:justify-center">
             <img
               alt=""
               loading="lazy"
-              width="250"
-              style="object-fit: contain; object-position: 0% 20%;"
+              width="300"
+              style="object-fit: contain; object-position: 0% 30%;"
               class="inline-block pb-10 lg:pb-0 max-w-full md:max-w-xl"
               src="<%=require('./img/homepage/pricing.svg')%>"
               
@@ -419,7 +423,7 @@
               </li>
             </ul>
 
-            <div class="py-10">
+            <div class="pt-10">
               <a
                 class="line-under text-blue text-base underline hover:no-underline"
                 href="#"
@@ -489,17 +493,17 @@
 
     <!-- start section 8 -->
     <div class="bg-blue">
-      <div class="container px-10 py-10">
-        <div class="pt-20 flex justify-center">
+      <div class="container px-10 py-24">
+        <div class="flex justify-center">
           <div>
             <h2 class="pb-0 text-white leading-tight font-bold text-center">
               Try <i>Notify</i> now
             </h2>
-            <p class="pt-6 pb-10 text-white text-center">
+            <p class="pt-10 pb-20 text-white text-center">
               Create an account and start sending test messages right
               away!
             </p>
-            <p class="mt-0 mb-20 text-center">
+            <p class="mt-0 text-center">
               <a href="#" class="btn-blue text-center hover:bg-blue-selected"
                 >Create an account</a
               >
@@ -593,18 +597,20 @@
 
   <!-- start section 9 -->
   <div class="bg-blue" role="navigation" aria-label="Footer">
-    <div class="container px-10 py-10">
-      <nav class="flex pt-10 pb-10" aria-label="footer links">
+    <div class="container px-10 py-24">
+      <nav class="flex" aria-label="footer links">
         <div class="block mr-20">
         <div class="block">
           <a
           href="#"
-          class="line-under text-white text-small block mb-2 underline hover:no-underline"
+          style="margin-bottom:2rem;"
+          class="line-under text-white text-small block underline hover:no-underline"
           >Privacy</a
           >
           <a
           href="#"
-            class="line-under text-white text-small block mb-2 underline hover:no-underline"
+          style="margin-bottom:2rem;"
+            class="line-under text-white text-small block underline hover:no-underline"
             >Security</a
           >
           <a
@@ -619,7 +625,7 @@
 
   <!-- start section 9 -->
   <div class="bg-gray">
-    <div class="container px-10 py-10">
+    <div class="container px-10 py-2">
       <div class="flex py-10 justify-end">
         <img
           alt="Symbol of the Government of Canada / Symbole du gouvernement du Canada"

@@ -7,14 +7,16 @@ module.exports = {
       outline: "0 0 0 3px rgba(255, 191, 71, 1)"
     },
     maxWidth: {
-      "4xl": "53rem",
+      "4xl": "53rem"
     },
     fontSize: {
+      xs: "1.3rem",
       small: "1.6rem",
       smaller: "1.9rem",
       base: "2.0rem",
       lg: "3.6rem",
       xl: "3.8rem",
+      xxl: "6.5rem",
       brand: "2.6rem"
     },
     fontFamily: {
@@ -49,6 +51,11 @@ module.exports = {
         default: "#00703C",
         darker: "#002D18"
       }
+    }
+  },
+  extend: {
+    lineHeight: {
+      'extra-tight': '0.9',
     }
   },
   plugins: []
